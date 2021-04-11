@@ -1,21 +1,19 @@
-#include <graphics.h>					//包含EGE的头文件
+#include <graphics.h> //包含EGE的头文件
+#include "Enviroment.h"
+#include "Circle.h"
+#include "Color.h"
 
 int main()
 {
-	initgraph(640, 480);				//初始化图形界面
+	enviroment_controler graphyic1;
+	Circle c1;
 
-	setcolor(EGERGB(0xFF, 0x0, 0x0));	//设置绘画颜色为红色
-
-	setbkcolor(WHITE);					//设置背景颜色为白色
-
-	circle(320, 240, 100);				//画圆
-
-	setcolor(EGERGB(0xFF, 0x0, 0x0));	//设置绘画颜色为红色
-	circle(300, 220, 100);				//画圆
+	graphyic1.init_enviroment();
+	c1.paint();
 
 	getch();							//暂停，等待键盘按键
 
-	closegraph();						//关闭图形界面
+	graphyic1.close_graphic();
 
 	return 0;
 }

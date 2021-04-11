@@ -139,11 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="class.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="Enviroment.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="class.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="Enviroment.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
