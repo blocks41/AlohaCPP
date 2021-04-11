@@ -24,6 +24,7 @@
     <ProjectGuid>{e205da45-72eb-4635-ab3c-0cc818c08a4c}</ProjectGuid>
     <RootNamespace>AlohaCPP</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Employee</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
