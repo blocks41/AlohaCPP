@@ -25,5 +25,11 @@ public:
 	void set_fill_color(color fill_color_); //设置默认填充颜色
 	void init_enviroment();  //创建窗口
 	void close_graphic();  //关闭窗口
+	int get_Width(); 
+	int get_Height();  
+	LPCSTR get_caption();  
+	color_t get_bk_color();  
+	color_t get_paint_color(); 
+	color_t get_fill_color(); 
 };
 

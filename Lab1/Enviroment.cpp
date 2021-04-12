@@ -1,6 +1,4 @@
-#include <iostream>
 #include <graphics.h>
-#include "Color.h"
 #include "Enviroment.h"
 
 enviroment_controler::enviroment_controler() {
@@ -9,7 +7,7 @@ enviroment_controler::enviroment_controler() {
 	caption = "default";
 	bk_color= 0xF8F8FF;
 	paint_color= 0xDC143C;
-
+	fill_color = 0xDDA0DD;
 }
 //带参构造函数
 enviroment_controler::enviroment_controler(int Width_, int Height_, LPCSTR caption_, color bk_color_, color paint_color_, color fill_color_) {
@@ -18,6 +16,7 @@ enviroment_controler::enviroment_controler(int Width_, int Height_, LPCSTR capti
 	this->caption = caption_;
 	this->bk_color = bk_color_;
 	this->paint_color = paint_color_;
+	this->fill_color = fill_color_;
 }
 
 void enviroment_controler::set_Width(int Width_) {
@@ -49,4 +48,23 @@ void enviroment_controler::init_enviroment() {
 
 void enviroment_controler::close_graphic() {
 	closegraph();
+}
+
+int enviroment_controler::get_Width() {
+	return Width;
+}
+int enviroment_controler::get_Height() {
+	return Height;
+}
+LPCSTR enviroment_controler::get_caption() {
+	return caption;
+}
+color_t enviroment_controler::get_bk_color() {
+	return bk_color.get_color();
+}
+color_t enviroment_controler::get_paint_color() {
+	return paint_color.get_color();
+}
+color_t enviroment_controler::get_fill_color() {
+	return fill_color.get_color();
 }
