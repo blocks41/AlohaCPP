@@ -1,15 +1,9 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
-
 int main() {
-
-    char c;
-    int i = 0;
-    do {
-        c = cin.get();
-        cout << ++i << " : " <<
-            static_cast<int>(c) << endl;
-    } while (c != 'q');
-
-    return 0;
+	std::cout 
+		<< std::setw(5) << 'a'<< std::setfill('*')<< std::setw(5)<<'b'
+		<< std::endl;
+	return 0;
 }
