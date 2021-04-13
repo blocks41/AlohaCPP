@@ -24,7 +24,7 @@
     <ProjectGuid>{4928c11f-fce0-4ce3-b5b0-bb692c51b1ae}</ProjectGuid>
     <RootNamespace>exercise</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>StackOfInteger</ProjectName>
+    <ProjectName>StackOfInteger1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
