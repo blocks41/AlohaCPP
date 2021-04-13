@@ -18,13 +18,23 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="shape.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="shape.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cb817cfb-8328-4071-a76f-883b738a8838}</ProjectGuid>
-    <RootNamespace>shape</RootNamespace>
+    <ProjectGuid>{b8ed4032-e6d6-467c-b963-deeb3e5bc77b}</ProjectGuid>
+    <RootNamespace>Shapes</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Shapes</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,17 +149,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Circle.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Rectangle.cpp" />
-    <ClCompile Include="shape.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Circle.h" />
-    <ClInclude Include="Rectangle.h" />
-    <ClInclude Include="shape.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

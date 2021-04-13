@@ -15,12 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Circle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shape.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="max.h">
+    <ClInclude Include="Circle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shape.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
