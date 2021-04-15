@@ -50,4 +50,5 @@ int main() {
 	Vec2D v9{};
 	std::cin >> v9; // operator>>(std::cin, v9);
 	cout << v9 << endl;
+
 }

@@ -29,10 +29,10 @@ Vec2D Vec2D::add(double numeral) {
     return Vec2D(this->x_ + numeral, this->y_ + numeral);
 }
 
-Vec2D Vec2D::operator+ (const Vec2D& secondVec2D) {
+Vec2D Vec2D::operator + (const Vec2D& secondVec2D) {
     return this->add(secondVec2D);
 }
-Vec2D Vec2D::operator+ (const double numeral) {
+Vec2D Vec2D::operator + (const double numeral) {
     return this->add(numeral);
 }
 
