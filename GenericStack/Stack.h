@@ -13,10 +13,10 @@
 +getSize():int          返回栈内数量
 */
 
-template<typename T>
+template<typename T=char, int N=100 >
 class Stack {
 private:
-	T elements[100];
+	T elements[N];
 	int size{ 0 };
 
 public:
@@ -28,30 +28,30 @@ public:
 	int getSize();
 };
 
-template<typename T>
-Stack<T>::Stack(){
+template<typename T , int N >
+Stack<T ,N>::Stack(){
 	for (auto& i : elements)
 	{
 		i = 0;
 	}
 }
-template<typename T>
-bool Stack<T>::empty(){
+template<typename T, int N >
+bool Stack<T ,N>::empty(){
 	return (size == 0 ? true : false);
 }
-template<typename T>
-T Stack<T>::peek(){
+template<typename T , int N >
+T Stack<T, N>::peek(){
 	return elements[size - 1];
 }
-template<typename T>
-T Stack<T>::push(T value){
+template<typename T , int N >
+T Stack<T,N>::push(T value){
 	elements[size] = value;
 	size++;
 
 	return value;
 }
-template<typename T>
-T Stack<T>::pop(){
+template<typename T, int N  >
+T Stack<T, N>::pop(){
 	int i = elements[size - 1];
 	elements[size - 1] = 0;
 	size--;

@@ -3,7 +3,7 @@
 #include <string>
 
 int main(){
-	Stack<char> c;
+	Stack<> c;
 
 	std::string s{ "Hello world!" };
 
