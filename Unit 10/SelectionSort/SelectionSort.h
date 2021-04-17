@@ -8,7 +8,7 @@ void SelectionSort(std::array<T, N>& list) {
 	constexpr int size = N;
 
 	for (int i = 0; i < size - 1; i++) {
-		double min = list[i];
+		T min = list[i];
 		int min_index = i;
 		for (int j = i + 1; j < size; j++) {
 			if (min > list[j]) {
