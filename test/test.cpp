@@ -8,6 +8,4 @@ int main() {
 	std::vector<int> b;
 	std::array<int, 10> c;
 
-	b = static_cast<std::vector*> a;
-	c = b;
 }
